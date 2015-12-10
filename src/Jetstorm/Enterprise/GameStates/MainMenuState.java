@@ -84,23 +84,26 @@ public class MainMenuState extends GameStateClass {
 		
 		opacity = 250;
 		
+		g.setColor(new Color(0, 0, 0, 255));
 		g.setFont(titleTop);
 		
-		for (int i = 0; i < titleCTop.length; i++) {
-			g.setColor(titleColors[i]);
-			if (i < 6) {
-				g.drawString(String.valueOf(titleCTop[i]), (WindowClass.WIDTH / 8) + (i * 22), (WindowClass.HEIGHT / 4));
-			} else {
-				g.drawString(String.valueOf(titleCTop[i]), (WindowClass.WIDTH / 8) + (i * 21), (WindowClass.HEIGHT / 4));
-			}
-		}
-		
-		g.setFont(titleBottom);
-		
-		for (int i = 0; i < titleCBottom.length; i++) {
-			g.setColor(titleColors[i + 7]);
-			g.drawString(String.valueOf(titleCBottom[i]), (WindowClass.WIDTH / 6) + (i * 22), (WindowClass.HEIGHT / 2));
-		}
+		g.drawChars(titleCTop, 0, 8, WindowClass.WIDTH / 8, WindowClass.HEIGHT / 4);
+//		
+//		for (int i = 0; i < titleCTop.length; i++) {
+//			g.setColor(titleColors[i]);
+//			if (i < 6) {
+//				g.drawString(String.valueOf(titleCTop[i]), (WindowClass.WIDTH / 8) + (i * 22), (WindowClass.HEIGHT / 4));
+//			} else {
+//				g.drawString(String.valueOf(titleCTop[i]), (WindowClass.WIDTH / 8) + (i * 21), (WindowClass.HEIGHT / 4));
+//			}
+//		}
+//		
+//		g.setFont(titleBottom);
+//		
+//		for (int i = 0; i < titleCBottom.length; i++) {
+//			g.setColor(titleColors[i + 7]);
+//			g.drawString(String.valueOf(titleCBottom[i]), (WindowClass.WIDTH / 6) + (i * 22), (WindowClass.HEIGHT / 2));
+//		}
 		
 	}
 
