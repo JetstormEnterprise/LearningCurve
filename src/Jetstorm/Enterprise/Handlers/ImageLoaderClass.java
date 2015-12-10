@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 
 public class ImageLoaderClass {
 
-	public static BufferedImage DRAGONINTRO = load("/backgrounds/redDragon.gif");
+	public static BufferedImage DRAGONINTRO = load("/backgrounds/redDragon.jpg");
 
 	private static BufferedImage load(String s) {
 		BufferedImage image = null;

@@ -8,14 +8,14 @@ public class GameStateManagerClass {
 	private int currentState;
 
 	public static final int NUMGAMESTATES = 10;
-	public static final int JESTORMLOGOSTATE = 0;
+	public static final int JETSTORMLOGOSTATE = 0;
 	public static final int MAINMENUSTATE = 1;
 
 	public GameStateManagerClass() {
 
 		gameStates = new GameStateClass[NUMGAMESTATES];
 
-		currentState = MAINMENUSTATE;
+		currentState = JETSTORMLOGOSTATE;
 		loadState(currentState);
 
 	}
@@ -24,7 +24,7 @@ public class GameStateManagerClass {
 
 		//if (state == STARTUPSCREENSTATE)
 			//gameStates[state] = new StartupScreenState(this);
-		if (state == JESTORMLOGOSTATE)
+		if (state == JETSTORMLOGOSTATE)
 			gameStates[state] = new JetstormLogoState(this);
 		else if (state == MAINMENUSTATE)
 			gameStates[state] = new MainMenuState(this);

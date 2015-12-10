@@ -20,9 +20,9 @@ import Jetstorm.Enterprise.Handlers.MouseClass;
 @SuppressWarnings("serial")
 public class WindowClass extends JPanel implements Runnable, KeyListener, MouseListener, MouseMotionListener {
 
-	public static final int WIDTH = 240;
-	public static final int HEIGHT = 160;
-	public static final int SCALE = 3;
+	public static final int WIDTH = 640;
+	public static final int HEIGHT = 480;
+	public static final int SCALE = 2;
 
 	private Thread thread;
 	private boolean running;
